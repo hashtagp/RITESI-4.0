@@ -1,0 +1,125 @@
+.partner-logos-container {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .partner-logos-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #002d80;
+  }
+  
+  .partner-marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .partner-marquee-content {
+    display: flex;
+    animation: marquee 15s linear infinite;
+  }
+  
+  .partner-logo {
+    margin: 0 15px;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .publishing-partners {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .publishing-partners h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #002d80;
+    text-align: center;
+  }
+  
+  .publishing-partners ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .publishing-partners li {
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #002d80;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .publishing-partners li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .publishing-partners li span::before {
+    content: "📘";
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .publishing-partners li span {
+    display: grid;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .publishing-partners li span button{
+    max-width:fit-content;
+    margin: 0 auto;
+    background-color: #002d80;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .partner-logo {
+      width: 100px;
+    }
+  
+    .publishing-partners li {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .partner-logo {
+      width: 80px;
+    }
+  
+    .publishing-partners li {
+      width: calc(100% - 40px);
+    }
+  }

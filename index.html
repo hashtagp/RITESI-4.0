@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RITESI 4.0</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/AboutConference.css">
+    <link rel="stylesheet" href="css/tickets.css">
+    <link rel="stylesheet" href="css/maps.css">
+    <link rel="stylesheet" href="css/partner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <img src="assets/images/reva logo.png" alt="Logo 1" class="logo1" />
+            <span class="logo-separator">X</span>
+            <img src="assets/images/utas logo.png" alt="Logo 2" class="logo2" />
+        </a>
+        <div class="navigation">
+            <div class="menu-register">
+                <a href="/register.html" class="register-btn">Register</a>
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/schedule.html">Schedule</a></li>
+                <li><a href="/team.html">Organizing Committee</a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero-container">
+            <div class="hero-slider">
+                <div><img src="assets/images/ut-1.jpg" alt="Slide 1" class="hero-image"></div>
+                <div><img src="assets/images/kr-1.jpg" alt="Slide 2" class="hero-image"></div>
+                <div><img src="assets/images/ut-2.jpg" alt="Slide 3" class="hero-image"></div>
+            </div>
+            <div class="hero-content">
+                <p>1<sup>st</sup> International Conference</p>
+                <p>on</p>
+                <h1>Recent Interdisciplinary Trends in Engineering and Science for Industry 4.0</h1>
+                <a href="#tickets"><button class="hero-button">26<sup>th</sup> March 2025 - REVA University, Bangalore, India</button></a>
+                <a href="#tickets"><button class="hero-button">27<sup>th</sup> & 28<sup>th</sup> March 2025 - UTAR, Kuala Lumpur, Malaysia</button></a>
+            </div>
+        </div>
+
+        <div class="about-conference">
+            <h1>RITESI 4.0</h1>
+            <p>
+                RITESI 4.0 is a prestigious platform designed to bring together a diverse group of academicians, researchers, industry professionals, and students to discuss and explore recent interdisciplinary trends in engineering and science, particularly in the context of Industry 4.0. This international conference aims to foster collaboration and innovation across different disciplines, contributing to the advancement of knowledge and technology in this rapidly evolving industrial landscape. All the selected papers will be published in Scopus indexed journals.
+            </p>
+        </div>
+
+        <section class="call-for-papers">
+            <h2>Call for Papers</h2>
+            <p>Topics of Interest Include but are not Limited to:</p>
+            <ul>
+                <li>Advanced Manufacturing Technologies</li>
+                <li>Artificial Intelligence and Machine Learning</li>
+                <li>Internet of Things (IoT) and Industrial IoT</li>
+                <li>Big Data and Analytics</li>
+                <li>Sustainable and Green Technologies</li>
+                <li>Cybersecurity in Industry 4.0</li>
+                <li>Smart Materials and Nanotechnology</li>
+                <li>Human-Machine Interaction</li>
+                <li>Cloud Computing and Edge Computing</li>
+                <li>Digital Transformation and Smart Infrastructure</li>
+                <li>Engineering Education for Industry 4.0</li>
+                <li>Interdisciplinary Research Approaches</li>
+                <li>Integrative Technologies for Industry 4.0</li>
+                <li>Socio-Economic Impacts of Industry 4.0</li>
+            </ul>
+        </section>
+
+        <section class="tickets-section" id="tickets">
+            <h2>Get Your Tickets</h2>
+            <div class="tickets-container">
+                <div class="ticket-card">
+                    <div class="ticket-type">Professionals</div>
+                    <div class="ticket-price">Rs.1500 (USD 18$)</div>
+                    <a href="https://www.reva.edu.in/payment" class="ticket-button">Buy Now</a>
+                </div>
+                <div class="ticket-card">
+                    <div class="ticket-type">Research Scholars</div>
+                    <div class="ticket-price">Rs.1000 (USD 12$)</div>
+                    <a href="https://www.reva.edu.in/payment" class="ticket-button">Buy Now</a>
+                </div>
+                <div class="ticket-card">
+                    <div class="ticket-type">PG Students</div>
+                    <div class="ticket-price">Rs.1000 (USD 12$)</div>
+                    <a href="https://www.reva.edu.in/payment" class="ticket-button">Buy Now</a>
+                </div>
+                <div class="ticket-card">
+                    <div class="ticket-type">Industry Participants</div>
+                    <div class="ticket-price">Rs.2000 (USD 24$)</div>
+                    <a href="https://www.reva.edu.in/payment" class="ticket-button">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="map-container">
+            <iframe
+                title="REVA University"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.882638301186!2d77.6346118!3d13.1168745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae191736187a37%3A0x3092096ba7fb4c9b!2sREVA%20UNIVERSITY!5e0!3m2!1sen!2sin!4v1733929839430!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <iframe
+                title="Universiti Tunku Abdul Rahman"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15956.27192681607!2d101.1351317!3d4.3348363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cb1d573f9aabf3%3A0x28cc06c069e40dce!2sUniversiti%20Tunku%20Abdul%20Rahman%20(UTAR)!5e0!3m2!1sen!2smy!4v1692006405253!5m2!1sen!2smy"
+                width="100%"
+                height="450"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+
+        <div class="partner-logos-container">
+            <h2>Associate Partners</h2>
+            <div class="partner-marquee">
+                <div class="partner-marquee-content">
+                    <img src="assets/images/iste.png" alt="Partner Logo 1" class="partner-logo">
+                    <img src="assets/images/iete.png" alt="Partner Logo 2" class="partner-logo">
+                    <img src="assets/images/JSS.png" alt="Partner Logo 3" class="partner-logo">
+                    <img src="assets/images/ACU.png" alt="Partner Logo 4" class="partner-logo">
+                    <img src="assets/images/ALTAIR.png" alt="Partner Logo 5" class="partner-logo">
+                    <img src="assets/images/CMR.png" alt="Partner Logo 6" class="partner-logo">
+                    <img src="assets/images/EASTWEST.png" alt="Partner Logo 7" class="partner-logo">
+                    <img src="assets/images/PEOPLE.png" alt="Partner Logo 8" class="partner-logo">
+                </div>
+            </div>
+            <div class="publishing-partners">
+                <h2>Publishing Partners</h2>
+                <ul>
+                    <li>
+                        Journal of Computational Analysis and Applications
+                        <span>
+                            <a href="assets/papers/Journal of Computational Analysis and Applications.pdf" download="Journal of Computational Analysis and Applications"><button>Download</button></a>
+                            (Computer Science, Mathematical Sciences) - Scopus
+                        </span>
+                    </li>
+                    <li>
+                        Journal of Electrical Systems
+                        <span>
+                            <a href="assets/papers/Journal of Electrical Systems.pdf" download="Journal of Electrical Systems"><button>Download</button></a>
+                            (Electrical Systems, Communication Systems, Information Science.) - Scopus
+                        </span>
+                    </li>
+                    <li>
+                        Journal of Environmental Nanotechnology
+                        <span>
+                            <a href="assets/papers/Journal of Environmental Nanotechnology.pdf" download="Journal of Environmental Nanotechnology"><button>Download</button></a>
+                            (Mechanical Sciences, Interdisciplinary) - Scopus
+                        </span>
+                    </li>
+                    <li>
+                        Nanotechnology Perceptions
+                        <span>
+                            <a href="assets/papers/Nanotechnology Perceptions.pdf" download="Nanotechnology Perceptions"><button>Download</button></a>
+                            (Nanotechnology) - Scopus
+                        </span>
+                    </li>
+                    <li>
+                        African Journal of Biomedical Research
+                        <span>
+                            <a href="assets/papers/African Journal of Biomedical Research.pdf" download="African Journal of Biomedical Research"><button>Download</button></a>
+                            (Biomedical Sciences) - Scopus
+                        </span>
+                    </li>
+                    <li>
+                        Revista Electronica de Veterinaria
+                        <span>
+                            <a href="assets/papers/Revista Electronica de Veterinaria.pdf" download="Revista Electronica de Veterinaria"><button>Download</button></a>
+                            (Medical and Health Sector) - Scopus
+                        </span>
+                    </li>
+                    <li>
+                        Library Progress International
+                        <span>
+                            <a href="assets/papers/Library Progress International.pdf" download="Library Progress International"><button>Download</button></a>
+                            (Library and Information Science) - Scopus
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-content-left">
+                <p>RITESI 4.0 is an international conference fostering collaboration among academicians, researchers, industry professionals, and students to explore interdisciplinary trends in engineering and science under Industry 4.0. Selected papers will be published in Scopus-indexed journals.</p>
+                <div class="footer-social-icons">
+                    <a href="https://www.facebook.com/REVAUniversityofficial/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/REVAUniversity"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/school/reva-university/posts/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/revauniversity_official/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-content-right">
+                <h2>CONTACT US</h2>
+                <ul>
+                    <li>Dr Shashi Kumar: +917483049219</li>
+                    <li>Dr Manjunath L H: +919844218146</li>
+                    <li>Dr Jagadeeswaran: +919880231308</li>
+                    <li>Dr Nikhil R: +919538608479</li>
+                    <li><a href="mailto:ritesi@reva.edu.in">ritesi@reva.edu.in</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr/>
+        <p class="footer-copyright">Copyright © 2024 RITESI Conference - All Rights Reserved.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.hero-slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

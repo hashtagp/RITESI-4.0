@@ -1,0 +1,40 @@
+
+header{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #002d62;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map-container iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .map-container iframe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .map-container {
+      flex-direction: column;
+      margin: 10px 10px;
+    }
+  }

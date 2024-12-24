@@ -1,0 +1,23 @@
+.about-conference {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 20px auto;
+    font-family: 'Poppins', sans-serif;
+    color: #002d62;
+  }
+  
+  .about-conference h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .about-conference p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+  }

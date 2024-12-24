@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RITESI 4.0</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <img src="assets/images/reva logo.png" alt="Logo 1" class="logo1" />
+            <span class="logo-separator">X</span>
+            <img src="assets/images/utas logo.png" alt="Logo 2" class="logo2" />
+        </a>
+        <div class="navigation">
+            <div class="menu-register">
+                <a href="/register.html" class="register-btn">Register</a>
+                <input type="checkbox" id="menu-toggle" />
+                <label for="menu-toggle" class="menu-icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/schedule.html">Schedule</a></li>
+                <li><a href="/team.html">Organizing Committee</a></li>
+                <li><a href="/aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="schedule-container">
+            <div class="schedule-header">
+                <h1>SCHEDULE</h1>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3 class="date">26/12/2024</h3>
+                        <h2 class="title">Last date for submission of Abstract</h2>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3 class="date">01/01/2025</h3>
+                        <h2 class="title">Intimation of abstract acceptance</h2>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3 class="date">05/01/2025</h3>
+                        <h2 class="title">Last date for submission of Full-Length paper</h2>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3 class="date">07/01/2025</h3>
+                        <h2 class="title">Acceptance of full-length paper</h2>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3 class="date">08/01/2025</h3>
+                        <h2 class="title">Submission of Camera-Ready paper</h2>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3 class="date">10/01/2025</h3>
+                        <h2 class="title">Registration</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-content-left">
+                <p>RITESI 4.0 fosters collaboration among academicians, researchers, and industry professionals under Industry 4.0. Selected papers will be published in Scopus-indexed journals.</p>
+                <div class="footer-social-icons">
+                    <a href="https://www.facebook.com/REVAUniversityofficial/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/REVAUniversity"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/school/reva-university/posts/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/revauniversity_official/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-content-right">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Dr Shashi Kumar: +917483049219</li>
+                    <li>Dr Manjunath L H: +919844218146</li>
+                    <li>Dr Jagadeeswaran: +919880231308</li>
+                    <li>Dr Nikhil R: +919538608479</li>
+                    <li><a href="mailto:ritesi@reva.edu.in">ritesi@reva.edu.in</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <p>&copy; 2024 RITESI Conference - All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>

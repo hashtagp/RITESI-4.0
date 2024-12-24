@@ -1,0 +1,223 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.tickets-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.tickets-section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #002d62;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.tickets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.ticket-card {
+    background-color: #002d62;
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.ticket-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ticket-card::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.ticket-card:hover::before {
+    transform: scale(1.2);
+}
+
+.ticket-type {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.ticket-price {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.ticket-button {
+    background-color: #ff7b54;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.ticket-button:hover {
+    background-color: #ff4500;
+}
+
+.call-for-papers {
+    padding: 60px 40px;
+    background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    text-align: left;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-for-papers:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.call-for-papers::before {
+    content: '';
+    position: absolute;
+    top: -70px;
+    left: -70px;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.call-for-papers::after {
+    content: '';
+    position: absolute;
+    bottom: -70px;
+    right: -70px;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.call-for-papers:hover::before,
+.call-for-papers:hover::after {
+    transform: scale(1.1);
+}
+
+.call-for-papers h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #002d62;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.call-for-papers p {
+    font-size: 1.4rem;
+    color: #002d62;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+    line-height: 1.8;
+}
+
+.call-for-papers ul {
+    list-style-type: decimal;
+    padding-left: 40px;
+    color: #002d62;
+    position: relative;
+    z-index: 2;
+}
+
+.call-for-papers li {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #002d62;
+    position: relative;
+    z-index: 2;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .ticket-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .call-for-papers {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .call-for-papers ul {
+        padding-left: 0;
+    }
+}
+
+.call-for-papers h2 {
+    font-size: 3rem;
+    color: #002d62;
+    margin-bottom: 20px;
+}
+
+.call-for-papers p {
+    font-size: 1.4rem;
+    color: #002d62;
+    margin-bottom: 20px;
+}
+
+.call-for-papers ul {
+    padding-left: 40px;
+}
+
+.call-for-papers li {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #002d62;
+}

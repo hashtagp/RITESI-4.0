@@ -1,0 +1,191 @@
+/* Team Page Styles */
+.team-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #ffffff;
+    padding-top: 20px;
+  }
+  
+  .team-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 40px 20px; /* Increased padding for better spacing */
+    background: linear-gradient(90deg, #004080, #73489A); /* Dark blue color to match navbar */
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    max-width: 1200px; /* Match the width of about-us-page */
+    margin: auto; /* Center the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better UI */
+}
+
+.team-header h1 {
+    font-size: 40px; /* Increased font size for better visibility */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle text shadow */
+    font-family: 'Roboto', sans-serif; /* Changed font for better aesthetics */
+}
+  
+  .team-header p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  .committee-section {
+    margin-bottom: 60px;
+  }
+  
+  .committee-section h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .committee-group {
+    margin-bottom: 40px;
+  }
+  
+  .committee-group h3 {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .member-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .member-photo {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .member-photo img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .member-card:hover .member-photo img {
+    transform: scale(1.1);
+  }
+  
+  .member-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .member-name {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .member-title {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .member-card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .members-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  
+    .member-photo {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .team-header h1 {
+      font-size: 28px;
+    }
+  
+    .team-header p {
+      font-size: 16px;
+    }
+  
+    .committee-section h2 {
+      font-size: 24px;
+    }
+  
+    .committee-group h3 {
+      font-size: 20px;
+    }
+  
+    .member-card {
+      margin-bottom: 20px;
+    }
+  
+    .member-photo {
+      height: 180px;
+    }
+  }
+  
+  /* Technical Advisory Board Grid */
+  .technical-advisory-board-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .technical-advisory-board-grid {
+      grid-template-columns: 1fr;
+    }
+  }
